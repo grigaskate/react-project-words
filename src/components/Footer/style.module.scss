@@ -1,0 +1,11 @@
+@import '../../style/vars.scss';
+@import '../../style/template.scss';
+
+.container {
+    padding: 1vw 2vw;
+    background-color: $color-green;
+    color: $color-white;
+    min-height: 10vh;
+    @include text;
+    text-align: center;
+}

@@ -1,11 +1,10 @@
 import React from 'react';
-import st from './style.module.scss';
+import st from './style.module.scss'
 
-export default function Footer() {
+export default function Error() {
   return (
     <div className={st.container}>
-      Footer
+      404
     </div>
   )
 }
-

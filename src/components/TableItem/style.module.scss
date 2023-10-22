@@ -1,0 +1,11 @@
+@import '../../style/vars.scss';
+@import '../../style/template.scss';
+
+.col {
+border-bottom: 1px solid $color-lightgreen;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+}

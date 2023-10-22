@@ -1,0 +1,14 @@
+@mixin heading-h1 {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5em ;
+    line-height: 1.6em;
+}
+
+@mixin text {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1em;
+}

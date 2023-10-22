@@ -1,0 +1,15 @@
+@import '../../style/vars.scss';
+@import '../../style/template.scss';
+
+.col {
+    background-color: $color-white;
+    border: 1px solid $color-lightgreen;
+    border-radius: 10px;
+    text-align: center;
+    width: 15vw;
+    padding: 7vw 0 7vw 0;
+    margin-left: auto;
+    margin-right: auto;
+    // flex: 1 0 100%;
+    // position: relative;
+}

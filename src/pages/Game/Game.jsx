@@ -1,11 +1,11 @@
 import React from 'react';
+import Slider from '../../components/Slider/Slider';
 import st from './style.module.scss';
 
-export default function Footer() {
+export default function Game() {
   return (
     <div className={st.container}>
-      Footer
+      <Slider/>
     </div>
   )
 }
-

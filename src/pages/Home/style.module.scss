@@ -1,0 +1,27 @@
+@import '../../style/vars.scss';
+@import '../../style/template.scss';
+
+.container {
+    margin: 2vw auto;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.text {
+    @include heading-h1;
+}
+
+.table {
+    margin: 2vw auto;
+    width: 65vw;
+    justify-content: center;
+    text-align: center;
+}
+.row {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+}
+
+.col {
+    border-bottom: 1px solid $color-lightgreen;
+    }
