@@ -1,12 +1,19 @@
-import React, {useState, useEffect} from 'react';
-import st from './style.module.scss'
+import React, {useState, useRef, useEffect} from 'react';
+import st from './style.module.scss';
 
-export default function Card({item: {id, english, transcription, russian}}) {
+export default function Card(props) {
+  const {id, english, transcription, russian, showTranslation, handleShowTranslation}=props;
+  const btnRef=useRef();
+
+  useEffect (()=>{
+    btnRef.current.focus()
+}, []);
+
   return (
-      <div className={st.col}>
-        <div className={st.row}>{english}</div>
-        <div className={st.row}>{transcription}</div>
-        <button>Показать перевод</button>
+      <div className={st.container}>
+        <div className={st.english}>{english}</div>
+        <div>{transcription}</div>
+        {showTranslation ? <p className={st.russian}>{russian}</p> : <button className={st.btnShowTranslate} ref={btnRef} onClick={handleShowTranslation}> Показать перевод</button>}
       </div>
   )
 }

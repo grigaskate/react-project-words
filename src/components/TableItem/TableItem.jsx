@@ -1,7 +1,7 @@
 import React from 'react';
 import st from './style.module.scss';
 
-export default function Table({item: {id, english, transcription, russian}}) {
+export default function TableItem({item: {id, english, transcription, russian}}) {
   return (
     <div className={st.container}>
         <div className={st.row}>

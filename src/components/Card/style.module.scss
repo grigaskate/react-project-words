@@ -1,15 +1,37 @@
 @import '../../style/vars.scss';
 @import '../../style/template.scss';
 
-.col {
+.container {
     background-color: $color-white;
     border: 1px solid $color-lightgreen;
     border-radius: 10px;
     text-align: center;
     width: 15vw;
-    padding: 7vw 0 7vw 0;
+    padding: 6vw 0;
     margin-left: auto;
     margin-right: auto;
-    // flex: 1 0 100%;
-    // position: relative;
+}
+
+.btnShowTranslate {
+    background-color: $color-green;
+    border: none;
+    border-radius: 5px;
+    color: $color-white;
+    @include text;
+    margin: 1vw auto 0 auto;
+    padding: 5px 10px;
+}
+
+.btnShowTranslate:focus {
+    background-color: $color-red;
+}
+
+.english {
+    @include heading-h2;
+    padding-bottom: 2vw;
+}
+
+.russian {
+    font-size: 1.2em;
+    margin: 1vw auto 0 auto;
 }

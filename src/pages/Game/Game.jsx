@@ -1,5 +1,6 @@
 import React from 'react';
-import Slider from '../../components/Slider/Slider';
+// import Slider from '../../components/Slider1/Slider1';
+import Slider from '../../components/Slider/Slider'
 import st from './style.module.scss';
 
 export default function Game() {

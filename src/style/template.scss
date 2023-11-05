@@ -6,6 +6,14 @@
     line-height: 1.6em;
 }
 
+@mixin heading-h2 {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em ;
+
+}
+
 @mixin text {
     font-family: $font1;
     font-style: normal;
