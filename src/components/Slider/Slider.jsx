@@ -1,21 +1,26 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import Card from '../Card/Card';
-import dictionary from '../../data/dictionary.json';
+import Spinner from '../Spinner/Spinner';
+// import dictionary from '../../data/dictionary.json';
+import { MyContext } from '../../MyContext/MyContext';
 import st from './style.module.scss'; 
 import {BsFillArrowLeftCircleFill,BsFillArrowRightCircleFill} from "react-icons/bs";
 
 
 export default function Slider() {
-    const[words, setWords]=useState(dictionary);
     const[currentIndex, setCurrentIndex]=useState(0);
     const[showTranslation, setShowTranslation]=useState(false);
     const[count, setCount]=useState(0);
+    const words = useContext(MyContext);
+    console.log(words);
 
     const object=words[currentIndex];
+    console.log(object)
 
     if (!object) {
-        return <h1>Loading...</h1>;
+        return   <Spinner/>
       }
+  
 
     const handleNextCard = () => {
       setCurrentIndex((prevIndex) =>
